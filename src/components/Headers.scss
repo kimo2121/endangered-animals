@@ -1,0 +1,102 @@
+div.headers-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 110px;
+  width: 100%;
+  @media only screen and (max-width: 1300px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  div.nav-group {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    height: inherit;
+    width: 50%;
+    max-width: 800px;
+    &.hide-text-nav {
+      display: none;
+    }
+    div.nav-item {
+      height: inherit;
+      width: 10%;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      white-space: nowrap;
+      &.extra-grow {
+        flex-grow: 2;
+      }
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+      h1 {
+        color: #171916;
+      }
+    }
+  }
+  button.connect-button {
+    height: 60px;
+    width: 150px;
+    font-size: 17px;
+    font-weight: bold;
+    background-image: linear-gradient(
+      -225deg,
+      #36a884,
+      #40af6d,
+      #4ab357,
+      #5ebe29,
+      #60bf27
+    );
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.9;
+      filter: drop-shadow(0 0 0.75rem #376704);
+    }
+    &.hide-nav-button {
+      display: none;
+    }
+  }
+  button.nav-icon-button {
+    color: #efefef;
+    background-image: linear-gradient(
+      -225deg,
+      #36a884,
+      #40af6d,
+      #4ab357,
+      #5ebe29,
+      #60bf27
+    );
+    &.hide-nav-icon {
+      display: none;
+    }
+    svg {
+      font-size: 50px;
+      margin-right: 10px;
+    }
+  }
+}
+.header-img-logo {
+  height: 100px;
+  width: 200px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+.MuiDialog-paper,
+.MuiDialogContent-root span {
+  color: white !important;
+}

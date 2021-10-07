@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/openSansFonts/static/OpenSans/OpenSans-Regular.ttf")
+    format("ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("./fonts/openSansFonts/static/OpenSans/OpenSans-Bold.ttf")
+    format("ttf");
+}
+
+div.MuiContainer-root {
+  padding: 0;
+  background-color: #2b2929;
+  min-width: 400px;
+  overflow: auto;
+  font-family: "Open Sans", "Open Sans Bold", sans-serif;
+
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+
+    &.sub-header {
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: 650px) {
+      font-size: 20px !important;
+
+      &.sub-header {
+        font-size: 13px !important;
+      }
+    }
+  }
+
+  p,
+  h1 {
+    margin: 0;
+  }
+
+  button {
+    font-family: "Open Sans", "Open Sans Bold", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    @media only screen and (max-width: 650px) {
+      font-size: 12px;
+    }
+  }
+}

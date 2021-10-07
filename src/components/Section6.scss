@@ -1,0 +1,51 @@
+div.section-6-container {
+  height: auto;
+  width: 100%;
+  background-color: #f7d536;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 0 3% 0;
+
+  div.MuiAccordion-root {
+    width: 68%;
+    margin-bottom: 2%;
+    border: solid black 3px;
+    border-radius: 10px;
+    font-weight: 100;
+    font-size: 18px;
+
+    @media only screen and (max-width: 900px) {
+      width: 85%;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    div.MuiAccordionSummary-contentGutters {
+      font-weight: bold;
+      font-size: 20px;
+      padding: 0.5%;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 15px;
+      }
+    }
+
+    div.MuiAccordionSummary-expandIconWrapper {
+      svg {
+        font-size: 40px;
+        color: #000;
+      }
+    }
+
+    div.MuiCollapse-vertical {
+      font-size: 18px;
+      padding: 0 3px 0 3px;
+      text-align: justify;
+    }
+  }
+}

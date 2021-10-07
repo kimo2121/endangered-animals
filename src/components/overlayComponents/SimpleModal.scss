@@ -1,0 +1,25 @@
+div.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 400px;
+  background-color: #fff;
+  border: 4px transparent solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  p {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+  }
+}

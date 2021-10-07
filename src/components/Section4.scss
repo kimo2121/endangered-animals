@@ -1,0 +1,52 @@
+div.section-4-container {
+  height: auto;
+  width: 100%;
+  background-color: #ede1b9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10% 0 35% 0;
+
+  @media only screen and (max-width: 1300px) {
+    height: auto !important;
+    padding: 8% 0 15% 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    color: #000;
+
+    &.sub-header {
+      font-size: 23px;
+    }
+
+    &.description {
+      text-align: center;
+      width: 50%;
+      margin: 1% 0 1% 0;
+      font-weight: normal;
+      font-size: 20px;
+
+      @media only screen and (max-width: 1300px) {
+        width: 85%;
+      }
+    }
+  }
+
+  button {
+    margin-top: 50px;
+    background-image: linear-gradient(-225deg, #0078d9, #0064b6, #01437d);
+    height: 65px;
+    width: 190px;
+    color: #efefef;
+
+    @media only screen and (max-width: 1300px) {
+      height: 60px;
+      width: 150px;
+    }
+  }
+}

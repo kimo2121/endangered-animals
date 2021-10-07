@@ -1,0 +1,39 @@
+div.navigation-menu {
+  div.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    height: auto;
+    width: 100%;
+
+    ul.MuiMenu-list {
+      height: 100%;
+      width: 100%;
+
+      li {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 20px;
+
+        button.connect-button {
+          height: 60px;
+          width: 100%;
+          font-size: 17px;
+          font-weight: bold;
+          background-image: linear-gradient(
+            -225deg,
+            #36a884,
+            #40af6d,
+            #4ab357,
+            #5ebe29,
+            #60bf27
+          );
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            opacity: 0.9;
+            filter: drop-shadow(0 0 0.75rem #376704);
+          }
+        }
+      }
+    }
+  }
+}

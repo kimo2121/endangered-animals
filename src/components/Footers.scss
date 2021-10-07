@@ -1,0 +1,126 @@
+// only screen and (max-width: 950px): only screen and (max-width: 950px);
+
+$gradient_background_color_1: -225deg, #ffa800, #ff9b01, #ff8602;
+
+div.footers-container {
+  min-height: 1236px;
+  height: auto;
+  width: 100%;
+  background-color: #030a04;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 18%;
+
+  @media only screen and (max-width: 950px) {
+    height: auto !important;
+    padding: 10% 0 10% 0;
+    background-size: contain;
+    min-height: 433px;
+  }
+
+  h1,
+  p {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  img.header {
+    height: 100%;
+    width: 100%;
+    max-height: 292px;
+    max-width: 956px;
+
+    @media only screen and (max-width: 950px) {
+      max-width: 350px;
+    }
+  }
+
+  button {
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 390px;
+    padding: 15px;
+    margin-top: 4%;
+    text-transform: none;
+    background-image: linear-gradient(-225deg, #ffa800, #ff9b01, #ff8602);
+
+    @media only screen and (max-width: 950px) {
+      max-width: 280px;
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+
+  div.creator-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 8%;
+    width: 100%;
+    max-width: 1300px;
+
+    @media only screen and (max-width: 950px) {
+      flex-wrap: wrap;
+    }
+
+    img {
+      height: 100%;
+      width: 50%;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      margin-left: 3%;
+
+      @media only screen and (max-width: 950px) {
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 45px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  div.followers-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10%;
+
+    div {
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        &:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
